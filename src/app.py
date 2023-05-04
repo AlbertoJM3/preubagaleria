@@ -15,6 +15,9 @@ locale.setlocale(locale.LC_TIME, '')
 
 @app.route('/')
 def homepage():
+    
+    
+    
 
     the_time = datetime.now().strftime("%A, %d %b %Y %H:%M")
 
