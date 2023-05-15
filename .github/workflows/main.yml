@@ -63,8 +63,8 @@ jobs:
         script: |
             sleep 30
             docker stop web && docker rm web
-            docker rmi AlbertoJM3/preubagaleria
-            docker run -d -p 80:5000 --name web AlbertoJM3/preubagaleria
+            docker rmi albertojm3/galeria
+            docker run -d -p 80:5000 --name web albertojm3/galeria
             sleep 30
   curl:
     name: Test URL con curl
